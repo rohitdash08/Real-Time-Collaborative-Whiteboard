@@ -1,0 +1,35 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  padding: 10px 0;
+  z-index: 100;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.me-3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-brand {
+  color: #34b1eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-brand:visited {
+  color: #34b1eb;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.d-flex {
+  align-items: center;
+}
