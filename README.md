@@ -45,9 +45,10 @@ npm install
 
 # Technologies Used
 React,
+TensorFlow,
 Node.js,
 Express,
 Socket.io,
 Fabric.js,
 Bootstrap,
-Docker
+Docker,
