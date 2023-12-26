@@ -5,9 +5,13 @@ Welcome to the Real-time Collaborative Whiteboard! This application allows users
 ## Demo
 
 ![Home page](./images/homepage.png)
+
 ![Whiteboard page](./images/whiteboard.png)
+
 ![Join page](./images/join.png)
+
 ![Keycloak page](./images/authentication.png)
+
 
 ## Features
 
@@ -40,10 +44,10 @@ npm install
 
 
 # Technologies Used
-React
-Node.js
-Express
-Socket.io
-Fabric.js
-Bootstrap
+React,
+Node.js,
+Express,
+Socket.io,
+Fabric.js,
+Bootstrap,
 Docker
