@@ -52,3 +52,4 @@ Socket.io,
 Fabric.js,
 Bootstrap,
 Docker,
+PostGreSQL
