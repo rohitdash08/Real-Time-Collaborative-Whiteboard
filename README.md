@@ -17,22 +17,33 @@ Welcome to the Real-time Collaborative Whiteboard! This application allows users
 - **Save:** Save the whiteboard as an image or PDF, and classify images.
 - **Keycloak Authentication** User Signup and login using keycloak.
 
-## Installation
+# Installation
 
 Follow these steps to set up the Project:
 
-# Clone the Repository
+## Clone the Repository
 
 git clone https://github.com/rohitdash08/Real-Time-Collaborative-Whiteboard.git
 
-# Navigate to the porject directory
+## Navigate to the porject directory
 
 cd whiteboard-app
 
-# Install dependencies
+## Install dependencies
 
 npm install
 
 # To run the application
 
-- **Keycloak Authentication** User Signup and login using keycloak.
+- **cd backend** node server.js
+- **cd whitboard-app** npm start
+
+
+# Technologies Used
+React
+Node.js
+Express
+Socket.io
+Fabric.js
+Bootstrap
+Docker
