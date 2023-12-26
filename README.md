@@ -37,7 +37,7 @@ cd whiteboard-app
 
 npm install
 
-# To run the application
+## To run the application
 
 - **cd backend** node server.js
 - **cd whitboard-app** npm start
