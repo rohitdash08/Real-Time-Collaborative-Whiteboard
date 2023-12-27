@@ -62,6 +62,15 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
       width: window.innerWidth,
       height: window.innerHeight,
     });
+
+    const savedCanvasState = localStorage.getItem("canvasState");
+
+    if (savedCanvasState) {
+      canvasInstance.loadFromJSON(savedCanvasState, () => {
+        canvasInstance.renderAll();
+      });
+    }
+
     canvasInstance.freeDrawingBrush.color = brushColor;
     canvasInstance.freeDrawingBrush.width = brushSize;
 
@@ -76,6 +85,8 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
           action: jsonString,
         });
       }
+      const canvasState = JSON.stringify(canvasInstance.toJSON());
+      localStorage.setItem("canvasState", canvasState);
     });
 
     history.current.push(JSON.stringify(canvasInstance.toJSON()));
