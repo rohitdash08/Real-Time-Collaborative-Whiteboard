@@ -45,6 +45,7 @@ npm install
 
 - **cd backend** node server.js
 - **cd whitboard-app** npm start
+- Make sure docker is running
 
 # Technologies Used
 
