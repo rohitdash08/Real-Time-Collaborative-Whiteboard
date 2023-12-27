@@ -40,6 +40,7 @@
 }
 
 .classify,
+.danger,
 .outline-secondary {
   border: 2px solid lightgrey;
   margin-right: 8px;

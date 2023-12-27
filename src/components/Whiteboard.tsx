@@ -381,6 +381,15 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
 
   const toggleShowToast = () => setShowToast(!showToast);
 
+  const handleClearCanvas = () => {
+    const canvas = canvasRef.current;
+    if (canvas) {
+      canvas.clear();
+      const canvasState = JSON.stringify(canvas.toJSON());
+      localStorage.setItem("canvasState", canvasState);
+    }
+  };
+
   return (
     <div className="whiteboard-container">
       <Toast
@@ -537,6 +546,15 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
                 <i className="bi bi-download"></i>
               </Button>
             </ButtonGroup>
+
+            <Button
+              variant="btn btn-danger danger"
+              onClick={handleClearCanvas}
+              title="Clear Canvas"
+            >
+              Clear Canvas <br />
+              <i className="bi bi-trash"></i>
+            </Button>
 
             <Modal show={showSaveModal} onHide={() => setShowSaveModal(false)}>
               <Modal.Header closeButton>
