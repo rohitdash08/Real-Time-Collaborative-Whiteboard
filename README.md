@@ -42,7 +42,6 @@ npm install
 - **cd backend** node server.js
 - **cd whitboard-app** npm start
 
-<<<<<<< HEAD
 
 # Technologies Used
 
@@ -67,4 +66,4 @@ Bootstrap,
 Docker,
 PostGreSQL
 
-> > > > > > > 8b4b39ccb59ad448f1e75401c31f4c82fdb555b8
+
