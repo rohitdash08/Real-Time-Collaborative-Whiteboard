@@ -12,6 +12,8 @@ Welcome to the Real-time Collaborative Whiteboard! This application allows users
 
 ![Invite](./images/Invite.png)
 
+![classification](./images/imageclassification.png)
+
 ![Keycloak page](./images/authentication.png)
 
 ## Features
