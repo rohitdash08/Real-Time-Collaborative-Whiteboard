@@ -94,6 +94,12 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
 
     if (!isNew && roomId && socket.current) {
       socket.current.emit("joinRoom", { roomId });
+
+      socket.current.on("initializeCanvas", ({ canvasState }) => {
+        canvasInstance.loadFromJSON(canvasState, () => {
+          canvasInstance.renderAll();
+        });
+      });
     }
 
     return () => {

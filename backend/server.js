@@ -120,10 +120,10 @@ const io = require("socket.io")(server, {
 
 // cursor movement
 io.on("connection", (socket) => {
-  console.log(`User connected to ${socket.handshake.query.roomId}`);
-
   const roomId = socket.handshake.query.roomId;
-  socket.join(roomId);
+  socket.on("joinRoom", ({ roomId }) => {
+    socket.join(roomId);
+  });
 
   socket.on("draw", (data) => {
     io.to(roomId).emit("draw", data);

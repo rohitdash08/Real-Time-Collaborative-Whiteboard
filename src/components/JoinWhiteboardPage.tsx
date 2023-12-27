@@ -16,7 +16,7 @@ const JoinWhiteboardPage: React.FC = () => {
     const trimmedValue = inputValue.trim();
 
     if (trimmedValue !== "") {
-      navigate(`/whiteboard/${roomId}`);
+      navigate(`/whiteboard/${trimmedValue}`);
     } else {
       alert("Please enter a valid room ID");
     }
