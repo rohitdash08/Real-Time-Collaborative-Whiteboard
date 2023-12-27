@@ -7,19 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Whiteboard.css";
 import { useParams } from "react-router-dom";
-import {
-  Button,
-  ButtonGroup,
-  Card,
-  Col,
-  Container,
-  Modal,
-  Navbar,
-  Row,
-  Toast,
-} from "react-bootstrap";
+import { Button, ButtonGroup, Card, Modal, Toast } from "react-bootstrap";
 import ImageUpload from "./ImageUpload";
 import ImageClassifier from "./ImageClassifier";
+import InviteButton from "./InviteButton";
 
 interface WhiteboardProps {
   isNew: boolean;
@@ -43,6 +34,8 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
   );
   const [showClassifierModal, setShowClassifierModal] =
     useState<boolean>(false);
+
+  const [showToast, setShowToast] = useState<boolean>(true);
 
   const history = useRef<Array<string>>([]);
   const redoHistory = useRef<Array<string>>([]);
@@ -375,6 +368,8 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
     setShowClassifierModal(!showClassifierModal);
   };
 
+  const toggleShowToast = () => setShowToast(!showToast);
+
   return (
     <div className="whiteboard-container">
       <Toast
@@ -383,10 +378,16 @@ const Whiteboard: React.FC<WhiteboardProps> = ({ isNew }) => {
           position: "absolute",
           top: "20px",
           right: "20px",
+          zIndex: 1,
         }}
       >
         <Toast.Header closeButton={false}>
           <strong className="room-id-title">Room ID</strong>
+          <div className="ms-auto">
+            <InviteButton
+              onInviteClick={(emails) => console.log("Inviting users:", emails)}
+            />
+          </div>
         </Toast.Header>
         <Toast.Body className="room-id-text">{roomId}</Toast.Body>
       </Toast>
