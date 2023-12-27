@@ -31,7 +31,7 @@ Follow these steps to set up the Project:
 
 git clone https://github.com/rohitdash08/Real-Time-Collaborative-Whiteboard.git
 
-## Navigate to the porject directory
+## Navigate to the project directory
 
 cd whiteboard-app
 
