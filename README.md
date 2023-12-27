@@ -20,8 +20,8 @@ Welcome to the Real-time Collaborative Whiteboard! This application allows users
 - **Zoom In/Out:** Zoom in and out for detailed or broad views of the canvas.
 - **Undo/Redo:** Easily undo and redo drawing actions.
 - **Save:** Save the whiteboard as an image or PDF, and classify images.
-- **Keycloak Authentication** User Signup and login using keycloak.
-- **Invitation** Send invite to the user to join the whiteboard via email.
+- **Keycloak Authentication:** User Signup and login using keycloak.
+- **Invitation:** Send invite to the user to join the whiteboard via email.
 
 # Installation
 
